@@ -52,7 +52,7 @@ btnDebug.addEventListener("click", () => {
 function debugButton() {
   if (debug) {
     btnDebug.innerHTML = "View Mode";
-    nodeSize = 20 + "px";
+    nodeSize = 25 + "px";
   } else {
     btnDebug.innerHTML = "Debug Mode";
     nodeSize = 10 + "px";
@@ -100,7 +100,7 @@ function renderFire() {
     if (debug) {
       html += `
       <div class="node debug">
-        ${fireIntensity}
+        <div class="fireIntensity">${fireIntensity}</div>
         <div class="pixelIndex">${iFire}</div>
       </div>`;
     } else {
